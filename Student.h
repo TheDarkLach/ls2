@@ -12,9 +12,7 @@ class Student {
   Student();
   ~Student();
   char* getFirst();
-  //void setFirst(char*);
   char* getLast();
-  //void setLast(char*);
   int getID();
   void setID(int);
   float getGPA();
