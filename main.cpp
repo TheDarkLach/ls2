@@ -57,8 +57,6 @@ int main() {
       cin.clear();
       cin.ignore(1000000, '\n');
       newStudent -> setGPA(floatInput);
-      //first = new Node(newStudent);
-      //first = addNew(first, first, newStudent);
       addNew(first, newStudent);
       cout << "Student has been added" << endl << endl;
     } 
