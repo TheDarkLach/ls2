@@ -19,10 +19,6 @@ char* Student::getFirst() {
   return first;
 }
 
-/*void Student::setFirst(char* inFirst) {
-  first = inFirst;
-  }*/
-
 char* Student::getLast() {
   return last;
 }
