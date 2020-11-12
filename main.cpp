@@ -13,11 +13,7 @@
 
 using namespace std;
 
-//Node* addNew(Node* first, Node* next, Student* student);
-//void print(Node* first);
-//float average(Node* first);
-//Node* remove(Node* first, char name[]);
-
+//prototypes, or could put functions before main
 void addNew(Node* previous, Student* student);
 void print(Node* next);
 float average(Node* next);
@@ -140,6 +136,7 @@ void print(Node* next) {
     cout << next -> getStudent() -> getFirst() << endl;
     cout << next -> getStudent() -> getID() << endl;
     cout << next -> getStudent() -> getGPA() << endl << endl;
+    //recurse to next student
     print(next -> getNext());
   }
 }
@@ -202,7 +199,7 @@ void remove(Node* next, Node* previous, char name[]) {
     remove(next -> getNext(), next, name);
   }
 }
-
+//math
 float average(Node* next) {
   float total = 0;
   int counter = 0;
